@@ -1,3 +1,26 @@
+## ERD
+```mermaid
+erDiagram
+  LECTURE {
+    Long lecture_id PK
+    String lecture_name
+    LocalDate lecture_date
+    int max_capacity
+    int current_enrollment
+  }
+
+  REGISTRATION {
+    Long student_id PK
+    Long lecture_id PK
+    LocalDate registered_at
+  }
+
+  STUDENT {
+    Long student_id PK
+    String student_name
+  }
+```
+
 # [ 2주차 과제 ] 특강 신청 서비스
 <aside>
 💡 아래 명세를 잘 읽어보고, 서버를 구현합니다.
